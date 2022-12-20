@@ -117,7 +117,7 @@ N.B. The Surface is expressed in square meters. For contracts that have not yet 
 3. Bitta kvartiraga 2ta kontract dan ortiq contract tuzgan odamni ismini toping.
 4. Oylik arenda puli hardoim 500$ dan katta bo’lgan, 5ta kantraktan ko’p kantrakt tuzilgan va Turin shaxrida joylashgan   kvartiralarni kode va adresini toping.
 
-
+sdad
 
 
 
