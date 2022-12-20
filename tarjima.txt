@@ -1,0 +1,128 @@
+
+Quyidagi  table lar berilgan. Table malumotlarini bazadan ko’rishingiz mumkin.
+Kalit so’zlar (inglizchani bilmaydiganlar uchun): 
+Magazin – jurnal, oynoma, 
+Article – maqola.
+Publisher – nashriyotchi
+Topic – mavzu
+Qolganini google translaterdan topinglar.
+ 
+MAGAZINE (MId, MName, Publisher)
+ARTICLE (AIselecd, Title, Topic, MId)
+ 
+Quyidagi Querilarni yozing.
+ 
+E xarfi dan boshlanadigan barcha magazine larning toping.
+Motorcycles  xaqida yozilgan maqolalarni toping.
+Motorcycles  xaqida yozilgan maqolalar sonini toping.
+Motorcycles  xaqida yozilmagan maqolalarni sonini toping.
+
+Bitta bo’lsa ham maqola  yozgan magazine larnin toping.
+Motorcycles  mavzusi xaqida eng kamida bitta maqola yozgan magazine nomini toping.
+Bironta ham  Motorcycles mavzusida maqola yozmagan  manazine nominitoping.
+Faqat Motorcycles xaqida maqola yozgan magazine ning nomini toping. 
+Motorcycles yokiy  cars mavzusida maqola yozgan magazine larni topinglar.
+Motorcycle va Cars mavzusida maqola yozgan magazine nomini toping.
+ Motorcycle xaqida eng kamida 2ta maqola yozgan magazine nomini toping. 
+Motorcycle xaqida faqatgina bitta maqola chiqargan magazi nomini toping. (Magazine boshqa mavzuda maqola yozgan bo’lishi mumkin)
+
+SQL Misolcha 2
+ 
+Quyidagi  table lar berilgan. Table malumotlarini bazadan ko’rishingiz mumkin.
+ 
+SAILOR (SId, SName, Expertise, DateOfBirth)
+BOOKING (SId, BId, Date)
+BOAT (BId, BName, Color)
+ 
+Sailor – dengizchi, Odamga nisbatan aytiladi. Dengizchi papay multikudagi dengizchi persanaji
+Booking – buyurtma
+Boat – qayiq
+Expertise – tajriba,
+ 
+ 
+Expertlik darajasi HIGH bo’lgan dengizchi laring sonin toping.
+ 
+Qizil rangdagi kemalar ni nomini chiqaring.
+Xar bitta exprtlik daraji nechta dengizchi bor.
+Xar bitta rangdan nechta qayiq bor.
+RED yoki GREEN ranglardagi kemalarda yurgan suzuvchilarni nomini toping.
+RED va Green kemalarda yurgan suzuvchilarni  ismi va qodini toping.
+Bironda ham RED kemada yurmagan suzuvchini nomini va kodini toping.
+Eng kamida 2ta xarxil kemada yurgan suzuvchining nomini toping.
+Eng kamida 3ta xarxil kemada yurgan suzuvchining nomini toping.
+\
+
+
+SQL Misolcha 3
+ 
+Quyidagi  table lar berilgan. Table malumotlarini bazadan ko’rishingiz mumkin.
+ 
+AIRCRAFT(AId, AName, MaximumRange) - samalot
+CERTIFICATE(PId, AId)     - sertifiqat, ruxsatnoma
+PILOT(PId, PName, Salary)  - uchuvchi
+ 
+Uchush uzunligi 5000k dan ko’p bo’lgan samaloylarni toping.
+
+Uchush masofasi 5,000 km teng va undan uzoqroqqa uchadigan samalotlarga sertificati bor bo’lgan uchuvchilarni kodi va nomini  toping.
+
+Eng kamida 2ta uchush masofasi 5,000 dan oshadigan samalotga sertifikati bor bo’lgan uchuvchini kodi va nomini toping.
+
+Eng kamida 2ta uchush masofasi 5,000 dan oshadigan samalotga sertifikati bor va Boeing samalotida uchunga sertifikati bor  uchuvchini kodi va nomini toping
+
+
+
+SQL Misolcha 5
+ 
+Quyidagi  table lar berilgan. Table malumotlarini bazadan ko’rishingiz mumkin.
+FLAT (FCode, Address, City, Surface)
+LEASING CONTRACT (LCCode, StartDate, EndDate, PersonName, MonthlyPrice, FCode)
+N.B. The Surface is expressed in square meters. For contracts that have not yet expired the EndDate is NULL
+ 
+1.Eng Kamida 3 kontract bor bo’lgan shaxarlar uchun quyidagilarni toping:  shaxar nomi, eng kata oylik to’lov,  o’rtacha oylik to’lov, eng kata
+ leasing kontractni  davomligi,  o’rtacha leasing contract davomligi, kelishilgan kontractlarning umumit soni
+2. Faqat 80 m^2 dan kata bo’lmagan kvartira arenda olgan odamlarning ismini toping.  (barchasi 80 dan kichik)
+3. Bitta kvartiraga 2ta kontract dan ortiq contract tuzgan odamni ismini toping.
+4. Oylik arenda puli hardoim 500$ dan katta bo’lgan, 5ta kantraktan ko’p kantrakt tuzilgan va Turin shaxrida joylashgan   kvartiralarni kode va adresini toping.
+
+
+SQL Misolcha 4
+
+Quyidagi  table lar berilgan. Table malumotlarini bazadan ko’rishingiz mumkin.
+
+COURSE (CourseCode, CourseName, Year, Semester)
+COURSE_SCHEDULE (CourseCode, DayOfWeek, StartTime, EndTime, Room)
+
+ • Yil, semester va xafta kunlari bo’yicha darslar soati miqdorini toping.
+
+ • Xaftasiga 6 soatdan ko’p  dars bo’ladigan 3chi kurs fanlarning kodi,  nomi, xaftalik darslar soati ni toping.
+
+ • Birinchi  kurs   fanlari   umuman o’tilmagan xonalarni toping.
+.
+ • 3chi kurs fanlaridan  umumiy xaftalik darslar soati 10 soatdan balant va dars kunlari xaftaning 3ta turli kuniga 
+to’g’ri keladigan kurslarning kodi, nomi, va  xaftalik  umumiy soatini toping. 
+
+10 bilan vaqt intervalini solishtirish uchun (10 * '1 hour'::interval) dan foydalaning.
+
+
+Quyidagi  table lar berilgan. Table malumotlarini bazadan ko’rishingiz mumkin.
+FLAT (FCode, Address, City, Surface)
+LEASING CONTRACT (LCCode, StartDate, EndDate, PersonName, MonthlyPrice, FCode)
+N.B. The Surface is expressed in square meters. For contracts that have not yet expired the EndDate is NULL
+ 
+1.Eng Kamida 3 kontract bor bo’lgan shaxarlar uchun quyidagilarni toping:  shaxar nomi, eng
+ kata oylik to’lov,
+ o’rtacha oylik to’lov, eng kata leasing kontractni  davomligi,  o’rtacha leasing contract
+  davomligi, kelishilgan kontractlarning umumit soni
+2. Faqat 80 m^2 dan kata bo’lmagan kvartira arenda olgan odamlarning ismini toping.  (barchasi 80 dan kichik)
+3. Bitta kvartiraga 2ta kontract dan ortiq contract tuzgan odamni ismini toping.
+4. Oylik arenda puli hardoim 500$ dan katta bo’lgan, 5ta kantraktan ko’p kantrakt tuzilgan va Turin shaxrida joylashgan   kvartiralarni kode va adresini toping.
+
+
+
+
+
+
+
+
+
+ 
